@@ -18,8 +18,8 @@ def scrape_mars():
 
     # %%
 
-    response["news_titles"] = page.find("div", "content_title").text
-    response["news_p"] = page.find("div", "article_teaser_body").text
+    response["news_title"] = page.find("div", "content_title").string
+    response["news_p"] = page.find("div", "article_teaser_body").string
 
     # %%
     url ="https://spaceimages-mars.com/"
